@@ -1,0 +1,249 @@
+root {
+    --White: #ffffff;
+
+    --Stone-100: #f3e6d8;
+    --Stone-150: #e4ded8;
+    --Stone-600: #5f574e;
+    --Stone-900: hsl(24, 5%, 18%);
+
+    --Brown-800: #854632;
+
+    --Rose-800: #7b284f;
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.container-recipe {
+    border-radius: 1.563rem;
+    background-color: #ffffff;
+    margin-top: 30px;
+    width: 50rem;
+    height: 120rem;
+    margin-bottom: 30px;
+    -webkit-border-radius: 1.563rem;
+    -moz-border-radius: 1.563rem;
+    -ms-border-radius: 1.563rem;
+    -o-border-radius: 1.563rem;
+}
+
+.recipe-img {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.recipe-img img {
+    width: 90%;
+    height: 25rem;
+    border-radius: 0.938rem;
+    -webkit-border-radius: 0.938rem;
+    -moz-border-radius: 0.938rem;
+    -ms-border-radius: 0.938rem;
+    -o-border-radius: 0.938rem;
+    background-size: cover;
+}
+
+.recipe-text {
+    padding: 40px;
+}
+
+.recipe-text h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #232323;
+    font-family: "Young Serif", serif;
+
+}
+
+.recipe-text p {
+    color: #5f574e;
+    font-family: "Outfit", sans-serif;
+}
+
+.recipe-text .recipe-time {
+    background-color: #fff3f9;
+    margin-top: 30px;
+    width: 100%;
+    height: 230px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.recipe-text .recipe-time h2 {
+    padding-top: 20px;
+    padding-left: 25px;
+    color: #7b284f;
+    font-family: "Outfit", sans-serif;
+}
+
+.recipe-text .recipe-time .recipe-ul {
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.recipe-text .recipe-time .recipe-ul li {
+    padding: 10px;
+    font-family: "Outfit", sans-serif;
+    color: #565656;
+}
+
+.recipe-text .recipe-time .recipe-ul li::marker {
+    color: #7b284f;
+}
+
+.recipe-text .recipe-time .recipe-ul li b {
+    color: #565656;
+}
+
+.recipe-text .recipe-item {
+    margin-top: 30px;
+
+
+}
+
+.recipe-text .recipe-item h3 {
+    font-size: 2rem;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    color: #854632;
+}
+
+.recipe-text .recipe-item .recipe-item-ul {
+    margin: 20px;
+}
+
+.recipe-text .recipe-item .recipe-item-ul li {
+    padding: 10px;
+    font-family: "Outfit", sans-serif;
+}
+
+.recipe-text .recipe-item .recipe-item-ul li::marker {
+    color: #854632;
+}
+
+.recipe-inst-item {
+    margin-top: 20px;
+}
+
+.recipe-inst-item h3 {
+    font-size: 2rem;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    color: #854632;
+
+}
+
+
+
+.recipe-inst-item .recipe-inst-ul {
+    margin: 20px;
+}
+
+.recipe-inst-item .recipe-inst-ul li {
+    padding: 10px;
+    list-style: decimal;
+    font-family: "Outfit", sans-serif;
+    color: #2d2d2d;
+}
+
+.recipe-inst-item .recipe-inst-ul li::marker {
+    color: #854632;
+    font-weight: bold;
+}
+
+.recipe-text .recipe-nut {
+    margin-top: 20px;
+}
+
+.recipe-text .recipe-nut h3 {
+    font-size: 2rem;
+    color: #854632;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.dis-item {
+    display: flex;
+    gap: 20rem;
+    margin-top: 2rem;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+
+}
+
+.dis-item .item-2 p {
+    font-weight: bold;
+    color: #925d4d;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive tab design */
+
+@media (max-width: 770px) {
+    body {
+        background-color: transparent;
+    }
+}
+
+
+
+
+/* responsive Mobile design */
+
+@media (max-width: 430px) {
+    body {
+        background-color: transparent;
+    }
+
+    .container-recipe {
+        margin-top: 0;
+        margin-top: 0;
+    }
+
+    .recipe-img {
+        margin-top: 0;
+    }
+
+    .recipe-img img {
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+    .dis-item{
+      display: block;
+    }
+}
